@@ -2,7 +2,7 @@ Bacteria[] Salmonella;
  void setup()   
  {     
    size(500,500);
-  Salmonella = new Bacteria[100];
+  Salmonella = new Bacteria[50];
   int i = 0;
   while(i < Salmonella.length){
     Salmonella[i] = new Bacteria();
@@ -24,7 +24,7 @@ Bacteria[] Salmonella;
    Bacteria(){
    myX = (int)(Math.random()*500)+1;
    myY = (int)(Math.random()*500)+3;
-   myColor = color(255,145,164);
+   myColor = color(252,18,37);
  }  
  void walk(){
    if(mouseX > myX)
@@ -37,6 +37,8 @@ Bacteria[] Salmonella;
    myY = myY + (int)(Math.random()*5)-3;
  }
  void show(){
-   ellipse(myX,myY,40,40);
+   fill(myColor);
+   ellipse(myX+10,myY,40,40);
+   ellipse(myX-10,myY,40,40);
  }
  }
