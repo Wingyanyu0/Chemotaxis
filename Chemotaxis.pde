@@ -38,7 +38,9 @@ Bacteria[] Salmonella;
  }
  void show(){
    fill(myColor);
-   ellipse(myX+10,myY,40,40);
-   ellipse(myX-10,myY,40,40);
+   ellipse(myX+20,myY+10,20,20);
+   ellipse(myX-20,myY+10,20,20);
+   fill(169,169,169);
+   ellipse(myX,myY,40,40);
  }
  }
